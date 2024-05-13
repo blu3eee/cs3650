@@ -192,7 +192,15 @@ export default function CachePage(): React.ReactNode {
                   <Label className="text-xs uppercase text-foreground/80">
                     {calculateValue(block)}
                   </Label>
-                  <div className="cursor-pointer text-xs text-foreground/60 hover:text-foreground/90">
+                  <div
+                    className="cursor-pointer text-xs text-foreground/60 hover:text-foreground/90"
+                    onClick={() => {
+                      setUnusedBlocks((prev) => [
+                        ...prev.slice(0, index),
+                        ...prev.slice(index + 1),
+                      ]);
+                    }}
+                  >
                     remove
                   </div>
                 </div>
