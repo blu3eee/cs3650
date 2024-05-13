@@ -1,29 +1,10 @@
 import type { MainNavItem, SiteConfig } from "@/types";
 
 export const mainNavItems: MainNavItem[] = [
-  // {
-  //   title: "Learn more",
-  //   items: [
-  //     {
-  //       title: "Github",
-  //       href: "https://github.com",
-  //       description: "My Github",
-  //     },
-  //     {
-  //       title: "About Us",
-  //       href: "/about-us",
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "Development",
-  //   items: [
-  //     {
-  //       title: "Playground",
-  //       href: "/development",
-  //     },
-  //   ],
-  // },
+  {
+    title: "Disclaimer",
+    href: "https://github.com/blu3eee/cs3650/blob/main/README.md",
+  },
 ];
 
 export const siteConfig: SiteConfig = {
@@ -37,9 +18,9 @@ export const siteConfig: SiteConfig = {
       title: "Github",
       href: "https://github.com/blu3eee/cs3650",
     },
-    // {
-    //   title: "About Us",
-    //   href: "/About us",
-    // },
+    {
+      title: "Disclaimer",
+      href: "https://github.com/blu3eee/cs3650/blob/main/README.md",
+    },
   ],
 };
