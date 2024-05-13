@@ -23,7 +23,7 @@ export default function Home(): JSX.Element {
       </div>
       <div className="flex w-full items-center justify-center gap-2">
         <a
-          href="https://github.com"
+          href="https://github.com/blu3eee/cs3650"
           target="_blank"
           rel="noreferrer"
           className={cn(buttonVariants({ variant: "secondary" }), "gap-2")}
