@@ -51,6 +51,12 @@ export default function Home(): JSX.Element {
         >
           MIPS Instruction Pipeline Visualization
         </Link>
+        <Link
+          href={"/machine-instructions-converter"}
+          className={cn(buttonVariants({ variant: "secondary", size: "md" }))}
+        >
+          Machine Instruction Converter
+        </Link>
       </div>
     </div>
   );
