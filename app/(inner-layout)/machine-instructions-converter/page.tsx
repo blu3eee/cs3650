@@ -28,6 +28,7 @@ import { poppinsFont } from "@/styles/fonts";
 import Link from "next/link";
 import { type ConvertResults, converter } from "./_utils/convert";
 import { Label } from "@/components/ui/label";
+import MicroInstructionDialog from "./_components/micro-instructions";
 
 const sampleInstructions = [
   {
@@ -161,10 +162,10 @@ const Page = (): React.ReactNode => {
         Inputs
       </div>
       <div className="text-sm font-medium text-foreground/70">
-        The site will assume you enter the correct inputs, no data verification
-        is going to be done. If you are trying to converting to machine
-        instructions from high-level code, please make sure you have the correct
-        assembly instructions from the high-level code first.
+        The functions will assume you enter the correct inputs, no data
+        verification is going to be done. If you are trying to converting to
+        machine instructions from high-level code, please make sure you have the
+        correct assembly instructions from the high-level code first.
       </div>
       <div className="flex flex-wrap items-center gap-3">
         <Label>Starting memory location:</Label>
@@ -284,7 +285,8 @@ const Page = (): React.ReactNode => {
                         {j === 0 && block.name}
                       </TableCell>
                       <TableCell className="border-r border-foreground/20">
-                        {instruction.instruction}
+                        {/* {instruction.instruction} */}
+                        <MicroInstructionDialog {...instruction} />
                       </TableCell>
                       <TableCell className="border-r border-foreground/20">
                         {instruction.address}
