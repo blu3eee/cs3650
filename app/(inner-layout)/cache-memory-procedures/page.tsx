@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { ChevronLeft, Plus } from "lucide-react";
+import { ChevronLeft, ChevronRight, Plus } from "lucide-react";
 import React, { useState } from "react";
 import { evaluate } from "mathjs";
 import { handleCalculateDirectMap } from "./_utils/direct-mapp";
@@ -137,6 +137,17 @@ export default function CachePage(): React.ReactNode {
         <div className={cn("text-2xl font-semibold", poppinsFont.className)}>
           Cache Memory Procedures
         </div>
+      </div>
+      <div className="flex items-center gap-3 self-end">
+        <Link
+          href={"/cache-memory-procedures/fill-columns"}
+          className="flex items-center gap-2"
+        >
+          <div className={cn("text-2xl font-semibold", poppinsFont.className)}>
+            Fill columns
+          </div>
+          <ChevronRight />
+        </Link>
       </div>
       <div className="flex flex-col gap-3">
         <Label className="font-bold uppercase text-foreground/50">Input</Label>
